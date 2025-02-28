@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "MartinAybar.CleanArchitecture.WebApi\WebApi.csproj", "{82FBCB70-419B-4134-8DF2-DA509FDD1016}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi", "WebApi\WebApi.csproj", "{82FBCB70-419B-4134-8DF2-DA509FDD1016}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "MartinAybar.CleanArchitecture.Application\Application.csproj", "{B7061032-6136-4623-8B6F-361F7A872C46}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "Application\Application.csproj", "{B7061032-6136-4623-8B6F-361F7A872C46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "MartinAybar.CleanArchitecture.Domain\Domain.csproj", "{0C77C77D-C16F-4C8C-9253-EC2240D3923D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{0C77C77D-C16F-4C8C-9253-EC2240D3923D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "MartinAybar.CleanArchitecture.Persistence\Persistence.csproj", "{A01F9E12-22C7-4FE2-A695-EBAAE8777081}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Persistence", "Persistence\Persistence.csproj", "{A01F9E12-22C7-4FE2-A695-EBAAE8777081}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "MartinAybar.CleanArchitecture.Infrastructure\Infrastructure.csproj", "{580BEF93-0981-47D1-A9C5-8FA7C55B8A92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{580BEF93-0981-47D1-A9C5-8FA7C55B8A92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
