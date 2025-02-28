@@ -1,0 +1,6 @@
+@MartinAybar.CleanArchitecture.WebApi_HostAddress = http://localhost:5195
+
+GET {{MartinAybar.CleanArchitecture.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
