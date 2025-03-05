@@ -1,4 +1,5 @@
-﻿using MartinAybar.Domain.Common;
+﻿using MartinAybar.Application.Contracts;
+using MartinAybar.Domain.Common;
 using MartinAybar.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
@@ -7,18 +8,18 @@ namespace MartinAybar.Persistence;
 
 public class CleanArchitectureDbContext : DbContext
 {
-    //private readonly ILoggedInUserService? _loggedInUserService;
+    private readonly ILoggedInUserService? _loggedInUserService;
 
     public CleanArchitectureDbContext(DbContextOptions<CleanArchitectureDbContext> options)
        : base(options)
     {
     }
 
-    //public CleanArchitectureDbContext(DbContextOptions<CleanArchitectureDbContext> options, ILoggedInUserService loggedInUserService)
-    //    : base(options)
-    //{
-    //    _loggedInUserService = loggedInUserService;
-    //}
+    public CleanArchitectureDbContext(DbContextOptions<CleanArchitectureDbContext> options, ILoggedInUserService loggedInUserService)
+        : base(options)
+    {
+        _loggedInUserService = loggedInUserService;
+    }
 
     public DbSet<Event> Events { get; set; }
     public DbSet<Category> Categories { get; set; }
@@ -199,11 +200,11 @@ public class CleanArchitectureDbContext : DbContext
             {
                 case EntityState.Added:
                     entry.Entity.CreatedDate = DateTime.Now;
-                    //entry.Entity.CreatedBy = _loggedInUserService.UserId;
+                    entry.Entity.CreatedBy = _loggedInUserService.UserId;
                     break;
                 case EntityState.Modified:
                     entry.Entity.LastModifiedDate = DateTime.Now;
-                    //entry.Entity.LastModifiedBy = _loggedInUserService.UserId;
+                    entry.Entity.LastModifiedBy = _loggedInUserService.UserId;
                     break;
             }
         }

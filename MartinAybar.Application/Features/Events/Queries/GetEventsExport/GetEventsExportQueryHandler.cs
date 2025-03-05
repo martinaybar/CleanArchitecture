@@ -10,9 +10,9 @@ public class GetEventsExportQueryHandler : IRequestHandler<GetEventsExportQuery,
 {
     private readonly IAsyncRepository<Event> _eventRepository;
     private readonly IMapper _mapper;
-    private readonly ICSVExporter _csvExporter;
+    private readonly ICSVExporterService _csvExporter;
 
-    public GetEventsExportQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository, ICSVExporter csvExporter)
+    public GetEventsExportQueryHandler(IMapper mapper, IAsyncRepository<Event> eventRepository, ICSVExporterService csvExporter)
     {
         _mapper = mapper;
         _eventRepository = eventRepository;

@@ -2,7 +2,7 @@
 
 namespace MartinAybar.Application.Contracts.Infrastructure;
 
-public interface ICSVExporter
+public interface ICSVExporterService
 {
     byte[] ExportEventsToCsv(List<EventExportDto> eventExportDtos);
 }
