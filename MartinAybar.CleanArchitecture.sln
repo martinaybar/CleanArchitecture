@@ -17,9 +17,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{82369DC3-2
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{6D0C35D1-7005-4428-BE91-C33FA3B25507}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartinAybar.Identity", "MartinAybar.Identity\MartinAybar.Identity.csproj", "{C5F74BA5-4A48-4CDA-B6C6-20649771C707}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MartinAybar.Identity", "MartinAybar.Identity\MartinAybar.Identity.csproj", "{C5F74BA5-4A48-4CDA-B6C6-20649771C707}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0C7D5438-E26A-4F08-BC27-C96366516DB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartinAybar.API.IntegrationTest", "MartinAybar.API.IntegrationTest\MartinAybar.API.IntegrationTest.csproj", "{76667364-FB4D-44BD-88BE-31186EB0F346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartinAybar.Application.UnitTest", "MartinAybar.Application.UnitTest\MartinAybar.Application.UnitTest.csproj", "{71B4E1D9-A48F-4913-8536-8689B8903B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MartinAybar.Persistence.IntegrationTest", "MartinAybar.Persistence.IntegrationTest\MartinAybar.Persistence.IntegrationTest.csproj", "{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +57,18 @@ Global
 		{C5F74BA5-4A48-4CDA-B6C6-20649771C707}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5F74BA5-4A48-4CDA-B6C6-20649771C707}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5F74BA5-4A48-4CDA-B6C6-20649771C707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76667364-FB4D-44BD-88BE-31186EB0F346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76667364-FB4D-44BD-88BE-31186EB0F346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76667364-FB4D-44BD-88BE-31186EB0F346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76667364-FB4D-44BD-88BE-31186EB0F346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B4E1D9-A48F-4913-8536-8689B8903B41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B4E1D9-A48F-4913-8536-8689B8903B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B4E1D9-A48F-4913-8536-8689B8903B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B4E1D9-A48F-4913-8536-8689B8903B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +79,9 @@ Global
 		{A01F9E12-22C7-4FE2-A695-EBAAE8777081} = {6D0C35D1-7005-4428-BE91-C33FA3B25507}
 		{580BEF93-0981-47D1-A9C5-8FA7C55B8A92} = {6D0C35D1-7005-4428-BE91-C33FA3B25507}
 		{C5F74BA5-4A48-4CDA-B6C6-20649771C707} = {6D0C35D1-7005-4428-BE91-C33FA3B25507}
+		{76667364-FB4D-44BD-88BE-31186EB0F346} = {0C7D5438-E26A-4F08-BC27-C96366516DB0}
+		{71B4E1D9-A48F-4913-8536-8689B8903B41} = {0C7D5438-E26A-4F08-BC27-C96366516DB0}
+		{6D659E03-7E8B-4F7D-9E35-E79C4E9A8E02} = {0C7D5438-E26A-4F08-BC27-C96366516DB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6CFD9259-4979-460F-8CE9-45E8CAF0D123}
