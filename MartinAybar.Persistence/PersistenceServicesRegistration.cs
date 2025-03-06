@@ -12,7 +12,7 @@ namespace MartinAybar.Persistence
         {
             //TODO Update connectionstring
             services.AddDbContext<CleanArchitectureDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("GloboTicketTicketManagementConnectionString")));
+                options.UseSqlServer(configuration.GetConnectionString("CleanArchitectureConnectionString")));
 
             services.AddScoped(typeof(IAsyncRepository<>), typeof(BaseRepository<>));
 

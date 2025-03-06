@@ -18,7 +18,7 @@ namespace MartinAybar.Identity
 
             services.AddIdentityCore<ApplicationUser>()
                 .AddEntityFrameworkStores<CleanArchitectureIdentityDbContext>();
-                //.AddApiEndpoints(); //TODO Add
+            //.AddApiEndpoints(); //TODO Add
         }
     }
 }
